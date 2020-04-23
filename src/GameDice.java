@@ -30,31 +30,31 @@ public class GameDice {
         int score=0;
         System.out.println("Welcome! Let's Play Roll Dice!");
         while(play.equals("Yes")||play.equals("yes")){
-    number=1+random.nextInt(6);
-    number2=1+random.nextInt(6);
-    if(number2==1 &&number>1||number2>1 &&number==1){
+            number=1+random.nextInt(6);
+            number2=1+random.nextInt(6);
+            if(number2==1 &&number>1||number2>1 &&number==1){
 
-    }
-    else if(number==1&&number2==1){
-        score+=25;
-    }
-    else
-        score+=number+number2;
-    System.out.println("Your rolls "+ number+" & "+number2);
-    System.out.println("Score: "+ score);
-    System.out.println("Roll again ?");
-    play=scanner.nextLine();
-    if(score>=100){
-        break;
-    }
+            }
+            else if(number==1&&number2==1){
+                score+=25;
+            }
+            else
+                score+=number+number2;
+            System.out.println("Your rolls "+ number+" & "+number2);
+            System.out.println("Score: "+ score);
+            System.out.println("Roll again ?");
+            play=scanner.nextLine();
+            if(score>=100){
+                break;
+            }
 
-}
-if(score >100){
-    System.out.println("You have scored over 100");
-}
-else
-    System.out.println();
-    System.out.println("Thank you for playing!");
+        }
+        if(score >100){
+            System.out.println("You have scored over 100");
+        }
+        else
+            System.out.println();
+        System.out.println("Thank you for playing!");
 
     }
 }
